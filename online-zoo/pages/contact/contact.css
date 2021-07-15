@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1920px;
+    height: 2313px;
+    margin: 0 auto;
+    background: #ffffff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    background-color: #f58021;
+}
+
+header > h1 {
+    color: #f58021;
+    font-size: 0;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-left: 260px;
+}
+
+.nav-header__menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-top: 43px;
+}
+
+.nav-header__item__about {
+    margin-left: 502px;
+    text-decoration: none;
+}
+
+.nav-header__item__map,
+.nav-header__item__zoos,
+.nav-header__item__contact-us,
+.nav-header__item__design {
+    margin-left: 50px;
+}
+
+.item__about,
+.item__map,
+.item__zoos,
+.item__design {
+    text-decoration: none;
+    color: #000000;
+}
+
+.item__contact-us {
+    color: #00A092;
+    text-decoration: none;
+}
+
+.item__contact-us:hover {
+    cursor: default;
+}
+
+.item__about:hover,
+.item__map:hover,
+.item__zoos:hover,
+.item__design:hover {
+    color: #ffffff;
+}
+
+.socials {
+    margin-top: 37px;
+    margin-left: 65px;
+    letter-spacing: 27px;
+}
+
+.header-youtube:hover,
+.header-instagram:hover,
+.header-facebook:hover {
+    border-bottom: 1px solid white;
+}
+
+aside {
+    display: none;
+}
+
+/* /header */
+
+/* main */
+
+main {
+    height: 1874px;
+}
+
+.get-in-touch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.get-in-touch__pic {
+    background-image: url(../../../online-zoo/assets/images/Touch\ the\ animal\ 1.png);
+    width: 1400px;
+    height: 815px;
+}
+
+.get-in-touch__content {
+    display: flex;
+}
+
+.get-in-touch__content_description {
+    margin-right: 175px;
+    margin-top: 145px;
+}
+
+.get-in-touch__content_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 66px;
+    text-transform: uppercase;
+    color: #00A092;
+    width: 405px;
+    height: 66px;
+}
+
+.get-in-touch__content_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    width: 545px;
+    height: 162px;
+    margin-top: 50px;
+}
+
+.get-in-touch__content_forms {
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    height: 618px;
+    margin-top: 143px;
+}
+
+.get-in-touch__content_forms__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.get-in-touch__content_forms__inp {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 680px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#message_area {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 680px;
+    height: 200px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+input::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #969696;
+    position: relative;
+    left: 20px;
+    letter-spacing: 0.051em;
+}
+
+textarea::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #A4A8AE;
+    position: relative;
+    left: 20px;
+    top: 18px;
+}
+
+.get-in-touch__send_message_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 359px;
+    height: 74px;
+    background: #00A092;
+    border-radius: 5px;
+    border: none;
+    margin-top: 67px;
+    position: relative;
+    left: 200px;
+}
+
+.send__message__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.send__message__text > img {
+    margin-left: 10px;
+}
+
+mark {
+    background: #ffffff;
+    color: #00A092;
+}
+/* /main */
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 329px;
+    background: #20113D;
+}
+
+.footer__line_one {
+    display: flex;
+}
+
+.footer__line_one {
+    margin-top: 50px;
+}
+
+.footer__logo_yem {
+    margin-left: 61px;
+}
+
+.footer__logo_rs {
+    margin-left: 61px;
+}
+
+.nav-footer__menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-top: 41px;
+    margin-left: 54px;
+}
+
+.nav-footer__menu > li {
+    margin-left: 46px;
+}
+
+.nav-footer__menu > li > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-footer__menu > li > a:hover {
+    color: gray;
+}
+
+.footer__donate_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 359px;
+    height: 74px;
+    background: #20113D;
+    margin-left: 101px;
+    margin-top: 20px;
+}
+
+.footer__btn_arrow {
+    margin-left: 10px;
+}
+
+.footer__donate_btn:hover {
+    cursor: pointer;
+    background: gray;
+}
+
+hr {
+    margin-left: 260px;
+    margin-top: 68px;
+    width: 1400px;
+    border: 1px solid #FFFFFF;
+}
+
+.footer__line_two {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo__name {
+    display: flex;
+    margin-top: 45px;
+    margin-left: 210px;
+}
+
+.logo__name > p {
+    margin-left: 50px;
+}
+
+.footer-socials {
+    display: flex;
+    margin-left: 712px;
+    margin-top: 38px;
+}
+
+.footer-socials > a {
+    margin-left: 40px;
+}
+
+.footer-socials > a:hover {
+    cursor: pointer;
+}
+/* /footer */

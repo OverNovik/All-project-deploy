@@ -1,0 +1,513 @@
+@media (min-width: 320px) and (max-width: 639px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        width: 320px;
+        height: 2100px;
+        margin: 0 auto;
+        background: #ffffff;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #ffffff;
+    }
+    
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: row;
+        height: 110px;
+        width: 320px;
+        top: 0;
+        background-color: #f58021;
+        position: fixed;
+        z-index: 31;
+    }
+    
+    header > h1 {
+        color: #f58021;
+        font-size: 0;
+    }
+    
+    .logo {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    .nav-header__menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin-top: 43px;
+        visibility: hidden;
+    }
+    
+    .nav-header__item__about {
+        margin-left: 163px;
+        text-decoration: none;
+    }
+    
+    .nav-header__item__map,
+    .nav-header__item__zoos,
+    .nav-header__item__contact-us,
+    .nav-header__item__design {
+        margin-left: 31px;
+    }
+    
+    .item__map,
+    .item__zoos,
+    .item__contact-us,
+    .item__design {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .item__map:hover,
+    .item__zoos:hover,
+    .item__contact-us:hover,
+    .item__design:hover {
+        color: #ffffff;
+    }
+    
+    .item__about {
+        color: #00a092;
+        text-decoration: none;
+    }
+    
+    .item__about:hover {
+        cursor: default;
+    }
+    
+    .socials {
+        margin-top: 37px;
+        margin-left: 80px;
+        letter-spacing: 27px;
+        display: none;
+    }
+    
+    .header-youtube:hover,
+    .header-instagram:hover,
+    .header-facebook:hover {
+        border-bottom: 1px solid white;
+    }
+
+    /* aside */
+
+    header > aside {
+        display: block;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        background: #20113D;
+        background-size: cover;
+        position: relative;
+    }
+
+    .wrapper__checkbox {
+        display: none;
+    }
+
+    .wrapper__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 40px;
+        height: 50px;
+        background: #f58021;
+        position: absolute;
+        top: 29px;
+        right: 435px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .btn__color_active {
+        background: #20113D;
+    }
+
+    .wrapper__btn-line {
+        display: block;
+        width: 30px;
+        height: 3px;
+        border-radius: 5px;
+        background: #000000;
+        margin: 5px 0;
+        position: relative;
+        transition: all .1s ease-in-out;
+    }
+
+    .btn__line_active {
+        background: #ffffff;
+    }
+
+    .wrapper__menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 25%;
+        width: 233px;
+        height: 600px;
+        background: #20113D;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 40px 40px;
+        transition: right 0.4s;
+        transform-origin: left center;
+        transform: scaleY(0) translateX(-20%);
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .menu__nav_active {
+        transform: scaleX(1) translateX(0%);
+        opacity: 1;
+    }
+
+    .wrapper__menu-link {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 50px 0;
+    }
+
+    .wrapper__menu-link:hover {
+        color: #00a092;
+    }
+
+    /* /aside */
+    
+    /* /header */
+
+    /* main */
+
+    main {
+        height: 1390px;
+        margin-top: 110px;
+    }
+
+    .get-in-touch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .get-in-touch__pic {
+        background-image: url(../../../online-zoo/assets/images/adaptive/320/Touch\ the\ animal\ 1.png);
+        background-repeat: no-repeat;
+        width: 320px;
+        height: 217px;
+    }
+
+    .get-in-touch__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .get-in-touch__content_description {
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+
+    .get-in-touch__content_title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #00A092;
+        width: 405px;
+        height: 52px;
+        text-align: center;
+        position: relative;
+        left: 0px;
+    }
+
+    .get-in-touch__content_text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        width: 300px;
+        height: 309px;
+        margin-top: 5px;
+        text-align: center;
+        position: relative;
+        left: 55px;
+    }
+
+    .get-in-touch__content_forms {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 568px;
+        margin-top: 50px;
+    }
+
+    .get-in-touch__content_forms__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000;
+    }
+
+    .get-in-touch__content_forms__inp {
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: 300px;
+        height: 50px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    #message_area {
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: 300px;
+        height: 200px;
+        margin-top: 5px;
+        overflow: hidden;
+    }
+
+    input::placeholder {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #969696;
+        position: relative;
+        left: 10px;
+        
+    }
+
+    textarea::placeholder {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #A4A8AE;
+        position: relative;
+        left: 20px;
+        top: 18px;
+    }
+
+    .get-in-touch__send_message_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 50px;
+        background: #00A092;
+        border-radius: 5px;
+        border: none;
+        margin-top: 30px;
+        position: relative;
+        left: 0px;
+        margin-right: 0px;
+    }
+
+    .send__message__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+    }
+
+    .send__message__text > img {
+        margin-left: 10px;
+    }
+
+    mark {
+        background: #ffffff;
+        color: #00A092;
+    }
+    /* /main */
+
+    /* footer */
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 710px;
+        background: #20113D;
+    }
+    
+    .footer__line_one {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer__line_one {
+        margin-top: 0px;
+        margin-left: 0px;
+        position: relative;
+        right: 10px;
+    }
+
+    .footer__logo_zoo {
+        margin-top: 20px;
+
+    }
+    
+    .footer__line_one > .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logo_yem {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    
+    .footer__logo_rs {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    
+    .nav-footer__menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    
+    .nav-footer__menu > li:nth-child(1) {
+        margin-left: 20px;
+    }
+    
+    .nav-footer__menu > li {
+        white-space: nowrap;
+        margin-left: 16px;
+    }
+
+    .nav-footer__menu > li > a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .nav-footer__menu > li > a:hover {
+        color: gray;
+    }
+    
+    .footer__donate_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-transform: none;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: 299px;
+        height: 45px;
+        background: #20113D;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    
+    .footer__btn_arrow {
+        margin-left: 10px;
+    }
+    
+    .footer__donate_btn:hover {
+        cursor: pointer;
+        background: gray;
+    }
+    
+    hr {
+        margin-left: 0px;
+        width: 640px;
+        border: 1px solid #FFFFFF;
+        position: relative;
+        bottom: 0px;
+        top: 33px;
+    }
+    
+    .footer__line_two {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .logo__name {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 0px;
+        position: relative;
+        bottom: 15px;
+    }
+    
+    .logo__name > p {
+        white-space: nowrap;
+        margin-top: 30px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .footer-socials {
+        display: flex;
+        margin-left: 0px;
+        margin-top: 0px;
+        position: relative;
+        bottom: 40px;
+    }
+    
+    .footer-socials > a {
+        margin-left: 50px;
+    }
+    
+    .footer-socials > a:hover {
+        cursor: pointer;
+    }
+    /* /footer */
+}

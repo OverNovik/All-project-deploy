@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/overnovik-JSFE2021Q1/english-for-kids/static/css/main.71d441fc.chunk.css",
+    "main.js": "/overnovik-JSFE2021Q1/english-for-kids/static/js/main.9b0dd3b5.chunk.js",
+    "main.js.map": "/overnovik-JSFE2021Q1/english-for-kids/static/js/main.9b0dd3b5.chunk.js.map",
+    "runtime-main.js": "/overnovik-JSFE2021Q1/english-for-kids/static/js/runtime-main.07237772.js",
+    "runtime-main.js.map": "/overnovik-JSFE2021Q1/english-for-kids/static/js/runtime-main.07237772.js.map",
+    "static/js/2.6ccd2360.chunk.js": "/overnovik-JSFE2021Q1/english-for-kids/static/js/2.6ccd2360.chunk.js",
+    "static/js/2.6ccd2360.chunk.js.map": "/overnovik-JSFE2021Q1/english-for-kids/static/js/2.6ccd2360.chunk.js.map",
+    "static/js/3.b2868140.chunk.js": "/overnovik-JSFE2021Q1/english-for-kids/static/js/3.b2868140.chunk.js",
+    "static/js/3.b2868140.chunk.js.map": "/overnovik-JSFE2021Q1/english-for-kids/static/js/3.b2868140.chunk.js.map",
+    "index.html": "/overnovik-JSFE2021Q1/english-for-kids/index.html",
+    "static/css/main.71d441fc.chunk.css.map": "/overnovik-JSFE2021Q1/english-for-kids/static/css/main.71d441fc.chunk.css.map",
+    "static/js/2.6ccd2360.chunk.js.LICENSE.txt": "/overnovik-JSFE2021Q1/english-for-kids/static/js/2.6ccd2360.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07237772.js",
+    "static/js/2.6ccd2360.chunk.js",
+    "static/css/main.71d441fc.chunk.css",
+    "static/js/main.9b0dd3b5.chunk.js"
+  ]
+}

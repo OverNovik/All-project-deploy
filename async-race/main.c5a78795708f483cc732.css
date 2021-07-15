@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
+*{margin:0;padding:0}html{font-size:20px}body{font-family:"Roboto";font-style:normal;height:100vh;background-color:#fff}button{width:100px;height:20px;color:#fff;background-color:#1369af;cursor:pointer;border:none;margin:5px;border-radius:5px}button:hover{background-color:#66afe0}
+nav{display:flex;justify-content:space-around}nav a{width:150px;height:25px;color:#fff;background-color:#1369af;cursor:pointer;border:none;margin:5px;border-radius:5px;text-decoration:none;text-align:center}nav a:hover{background-color:#66afe0}
+
+.cars-field{height:50vh}.cars-field__title{font-size:1rem}
+div{display:block}.car{border-bottom:1px dashed #000}.car img{width:50px;height:50px;float:right;position:relative;right:150px}.dot-a,.dot-b{width:20px}svg{position:relative}
+.popup_win{display:none;position:fixed;width:100%;height:100%;background-color:rgba(0,0,0,.5);top:0;left:0;transition:all .5s ease 0s;z-index:2000}.popup_win.open{display:block}.popup.open .popup__content{transform:perspective(600px);opacity:1}.popup__backdrop_win{min-height:100%;display:flex;align-items:center;justify-content:center;padding:25px 10px}.popup__content_win{background-color:#fff;width:385px;height:165px;display:flex;flex-direction:column;align-items:center;justify-content:center}.popup__content_win h1{display:flex;align-items:center;justify-content:center;width:100%;height:67px;font-family:"Roboto";font-style:normal;font-weight:600;font-size:30px;line-height:30px;letter-spacing:.15px;color:rgba(0,0,0,.87)}.popup__content_win .ok-win{margin-top:50px;margin-left:350px;display:flex;flex-direction:row;justify-content:center;align-items:center;width:108px;height:36px;box-shadow:0px 0px 2px rgba(0,0,0,.12),0px 2px 2px rgba(0,0,0,.24);border-radius:4px;margin:10px;border:none;text-transform:uppercase;cursor:pointer;background:#2196f3;color:#fff;text-decoration:none}
+.name-area{height:20px}
+

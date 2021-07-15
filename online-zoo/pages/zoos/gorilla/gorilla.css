@@ -1,0 +1,759 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1920px;
+    height: 3641px;
+    margin: 0 auto;
+    background: #ffffff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    background-color: #f58021;
+}
+
+header > h1 {
+    color: #f58021;
+    font-size: 0;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-left: 260px;
+}
+
+.nav-header__menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-top: 43px;
+}
+
+.nav-header__item__about {
+    margin-left: 502px;
+    text-decoration: none;
+}
+
+.nav-header__item__map,
+.nav-header__item__zoos,
+.nav-header__item__contact-us,
+.nav-header__item__design {
+    margin-left: 50px;
+}
+
+.item__about,
+.item__map,
+.item__contact-us,
+.item__design {
+    text-decoration: none;
+    color: #000000;
+}
+
+.item__zoos {
+    color: #00A092;
+    text-decoration: none;
+}
+
+.item__zoos:hover {
+    cursor: default;
+}
+
+.item__about:hover,
+.item__map:hover,
+.item__contact-us:hover,
+.item__design:hover {
+    color: #ffffff;
+}
+
+.socials {
+    margin-top: 37px;
+    margin-left: 65px;
+    letter-spacing: 27px;
+}
+
+.header-youtube:hover,
+.header-instagram:hover,
+.header-facebook:hover {
+    border-bottom: 1px solid white;
+}
+
+/* /header */
+
+/* main */
+
+main {
+    height: 3202px;
+}
+
+/* animal-cams */
+
+.animal-cams {
+    display: flex;
+    flex-direction: row;
+    height: 1347px;
+}
+
+aside {
+    z-index: 30;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 846px;
+    background: #20113D;
+    position: sticky;
+    top: 0px;
+}
+
+.side-bar__live_btn {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #f58021;
+    width: 120px;
+    height: 38px;
+    border: none;
+    border-radius: 5px 0;
+}
+
+.side-bar__live_btn > img {
+    margin-left: 10px;
+}
+
+.side-bar__leave_btn {
+    color: #ffffff;
+    background: #20113D;
+    line-height: 9px;
+    font-size: 33px;
+    height: 9px;
+    letter-spacing: -0.13em;
+    margin-left: 140px;
+    margin-top: -8px;
+    border: none;
+}
+
+.side-bar > button:hover {
+    cursor: pointer;
+}
+
+.side-bar__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.animal {
+    position: relative;
+}
+
+.side-bar__list > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    border-bottom: 1px solid #ffffff;
+    background: url(../../../../online-zoo/assets/icons/orange\ circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 171px;
+}
+
+.side-bar__list > li:hover {
+    transform: scale(1.1);
+    transition: all 1s 0.1s;
+}
+
+.side-bar__list > li:nth-child(1) {
+    border-top: 1px solid #ffffff;
+    margin-top: 40px;
+    background-image:  url(../../../../online-zoo/assets/icons/white\ cirlce.svg), url(../../../../online-zoo/assets/icons/white\ ring.svg);
+    background-repeat: no-repeat;
+    background-position-y: 34px, 26px;
+    transform: none;
+}
+
+.tooltip-eagle::after {
+    content: "Watch The Bald Eagles Nest from West End cam";
+    position: absolute;
+    top: 8.5%;
+    left: 100.5%;
+    opacity: 0;
+    visibility: hidden;
+    width: 220px;
+    height: 158px;
+    transform: scale(1.1);
+    transition-duration: all 1s 0.1s;
+    background: #20113D;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip-lemur::after {
+    content: "The ring-tailed lemurs play in Madagascar, Lemuria Land";
+    position: absolute;
+    top: 9.0%;
+    left: 100.5%;
+    opacity: 0;
+    visibility: hidden;
+    width: 220px;
+    height: 158px;
+    transform: scale(1.1);
+    transition-duration: all 1s 0.1s;
+    background: #20113D;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip-panda::after {
+    content: "Watch live from China's  Panda Center ";
+    position: absolute;
+    top: 5%;
+    left: 100.5%;
+    opacity: 0;
+    visibility: hidden;
+    width: 220px;
+    height: 158px;
+    transform: scale(1.1);
+    transition-duration: all 1s 0.1s;
+    background: #20113D;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip-eagle:hover::after,
+.tooltip-lemur:hover::after,
+.tooltip-panda:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slide-bar__scroll_btn {
+    background: #20113D;
+    border: none;
+    color: #ffffff;
+    font-size: 25px;
+    width: 220px;
+    height: 80px;
+}
+
+.animal-cams__content__title {
+    display: flex;
+}
+
+.animal-cams__title {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 66px;
+    text-transform: uppercase;
+    color: #00A092;
+    margin-top: 55px;
+    margin-left: 508px;
+}
+
+.donate-now_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F58021;
+    border-radius: 5px;
+    width: 240px;
+    height: 74px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 228px;
+}
+
+.donate-now_arrow {
+    margin-left: 10px;
+}
+
+.donate-now_btn:hover {
+    cursor: pointer;
+    background: orange;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 47px;
+    margin-left: 38px;
+    opacity: 0.6;
+ 	background: #f58021;
+ 	padding: 5px;
+    position: relative;
+}
+
+.video > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.animal-cams__content > h3 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 100px;
+    margin-left: 541px;
+}
+
+.animal-cams__slider {
+    display: flex;
+}
+
+.animal-cams__slider > ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 13px;
+    margin-top: 30px;
+}
+
+.animal-cams__slider > ul > li {
+    position: relative;
+}
+
+.animal-cams__slider > ul > li > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.animal-cams__slider__item:nth-child(2),
+.animal-cams__slider__item:nth-child(3) {
+    margin-left: 40px;
+}
+
+.left-arrow,
+.right-arrow {
+    width: 80px;
+    height: 74px;
+    border: none;
+    background: #ffffff;
+}
+
+.left-arrow {
+    margin-left: 185px;
+    margin-top: 97px;
+}
+
+.right-arrow {
+    margin-left: 13px;
+    margin-top: 97px;
+}
+
+/* /animal-cams */
+
+/* donate */
+
+.donate {
+    display: flex;
+    margin-top: 150px;
+    height: 226px;
+    background-color: #20113D;
+}
+.donate__content__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 906px;
+    height: 51px;
+    margin-top: 50px;
+    margin-left: 260px;
+}
+
+.donate__content__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    width: 919px;
+    height: 53px;
+    margin-top: 20px;
+    margin-left: 262px;
+}
+
+.quick__donate__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-top: 52px;
+    margin-left: 160px;
+}
+
+.donation__amount {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 160px;
+    background: #20113D;
+    padding: 26px 59px 24px 21px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #ffffff;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    position: relative;
+    right: 22px;
+    margin: 0;
+}
+
+input::-webkit-input-placeholder {
+    position: relative;
+    right: 9px;
+    color: #ffffff;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+form {
+    position: relative;
+    margin: 0 auto;
+}
+
+.quick__donate__btn {
+    position: absolute; 
+    top: 11px;
+    right: 1px;
+    padding: 25px 26px 22px 26px;
+    border: none;
+    background: #F58021;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.quick__donate__btn:hover {
+    background: orange;
+}
+/* /donate */
+
+/* you-know */
+
+.you-know {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 1424px;
+}
+
+.you-know__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1040px;
+    height: 299px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-top: 175px;
+    margin-left: 115px;
+}
+
+.you-know__content__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00A092;
+    width: 370px;
+    height: 51px;
+    margin-top: 46px;
+}
+
+.you-know__content__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    color: #000000;
+    width: 919px;
+    height: 102px;
+    margin-top: 20px;
+}
+
+.animal-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: baseline;
+}
+
+.animal-info__description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 147px;
+    width: 506px;
+    height: 382px;
+    margin-right: 1px;
+    position: relative;
+    right: 227px;
+}
+
+.animal-info__description__item {
+    display: flex;
+    flex-direction: row;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-top: 25px;
+}
+
+.animal-info__description__item_subheader {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.animal-info__description__item:nth-child(1) {
+    margin-top: 0;
+}
+
+.animal-info__description__item:nth-child(n+5) {
+    margin-top: 18px;
+}
+
+.animal-info__description__item_text {
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.animal-info__image {
+    margin-top: 148px;
+    position: relative;
+    right: 13px;
+}
+
+.animal-info__text_paragraph {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    width: 1159px;
+    height: 216px;
+    margin-top: 50px;
+    position: relative;
+    right: 120px;
+}
+
+.animal-info__description__item_btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.273px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: none;
+    margin-left: 64px;
+    background: #ffffff;
+    text-decoration: none;
+}
+
+.animal-info__description__item_btn > a {
+    text-decoration: none;
+    color: #F58021;
+}
+
+.animal-info__description__item_btn > a > img {
+    margin-left: 10px;
+}
+
+
+/* /you-know */
+
+/* /main */
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    background: #20113D;
+}
+
+.footer__line_one {
+    display: flex;
+}
+
+.footer__line_one {
+    margin-top: 50px;
+}
+
+.footer__logo_yem {
+    margin-left: 61px;
+}
+
+.footer__logo_rs {
+    margin-left: 61px;
+}
+
+.nav-footer__menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-top: 41px;
+    margin-left: 54px;
+}
+
+.nav-footer__menu > li {
+    margin-left: 46px;
+}
+
+.nav-footer__menu > li > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-footer__menu > li > a:hover {
+    color: gray;
+}
+
+.footer__donate_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 359px;
+    height: 74px;
+    background: #20113D;
+    margin-left: 101px;
+    margin-top: 20px;
+}
+
+.footer__btn_arrow {
+    margin-left: 10px;
+}
+
+.footer__donate_btn:hover {
+    cursor: pointer;
+    background: gray;
+}
+
+hr {
+    margin-left: 260px;
+    margin-top: 68px;
+    width: 1400px;
+    border: 1px solid #FFFFFF;
+}
+
+.footer__line_two {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo__name {
+    display: flex;
+    margin-top: 45px;
+    margin-left: 210px;
+}
+
+.logo__name > p {
+    margin-left: 50px;
+}
+
+.footer-socials {
+    display: flex;
+    margin-left: 712px;
+    margin-top: 38px;
+}
+
+.footer-socials > a {
+    margin-left: 40px;
+}
+
+.footer-socials > a:hover {
+    cursor: pointer;
+}
+/* /footer */

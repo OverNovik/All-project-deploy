@@ -1,0 +1,1519 @@
+@media (min-width: 640px) and (max-width: 1199px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        width: 640px;
+        height: 11011px;
+        margin: 0 auto;
+        background: #ffffff;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #ffffff;
+        overflow-x: hidden;
+    }
+    
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: row;
+        height: 110px;
+        width: 640px;
+        top: 0;
+        background-color: #f58021;
+        position: fixed;
+        z-index: 31;
+    }
+    
+    header > h1 {
+        color: #f58021;
+        font-size: 0;
+    }
+    
+    .logo {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    .nav-header__menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin-top: 43px;
+        visibility: hidden;
+    }
+    
+    .nav-header__item__about {
+        margin-left: 163px;
+        text-decoration: none;
+    }
+    
+    .nav-header__item__map,
+    .nav-header__item__zoos,
+    .nav-header__item__contact-us,
+    .nav-header__item__design {
+        margin-left: 31px;
+    }
+    
+    .item__map,
+    .item__zoos,
+    .item__contact-us,
+    .item__design {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .item__map:hover,
+    .item__zoos:hover,
+    .item__contact-us:hover,
+    .item__design:hover {
+        color: #ffffff;
+    }
+    
+    .item__about {
+        color: #00a092;
+        text-decoration: none;
+    }
+    
+    .item__about:hover {
+        cursor: default;
+    }
+    
+    .socials {
+        margin-top: 37px;
+        margin-left: 80px;
+        letter-spacing: 27px;
+        display: none;
+    }
+    
+    .header-youtube:hover,
+    .header-instagram:hover,
+    .header-facebook:hover {
+        border-bottom: 1px solid white;
+    }
+
+    /* aside */
+
+    header > aside {
+        display: block;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        background: #20113D;
+        background-size: cover;
+        position: relative;
+    }
+
+    .wrapper__checkbox {
+        display: none;
+    }
+
+    .wrapper__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+        background: #f58021;
+        position: absolute;
+        top: 29px;
+        right: 120px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .btn__color_active {
+        background: #20113D;
+    }
+
+    .wrapper__btn-line {
+        display: block;
+        width: 30px;
+        height: 3px;
+        border-radius: 5px;
+        background: #000000;
+        margin: 5px 0;
+        position: relative;
+        transition: all .1s ease-in-out;
+    }
+
+    .btn__line_active {
+        background: #ffffff;
+    }
+
+    .wrapper__menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 44%;
+        width: 311px;
+        height: 754px;
+        background: #20113D;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 40px 40px;
+        transition: right 0.4s;
+        transform-origin: left center;
+        transform: scaleY(0) translateX(-20%);
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .menu__nav_active {
+        transform: scaleX(1) translateX(0%);
+        opacity: 1;
+    }
+
+    .wrapper__menu-link {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 50px 0;
+    }
+
+    .wrapper__menu-link:hover {
+        color: #00a092;
+    }
+
+    /* /aside */
+    
+    /* /header */
+    
+    /* main */
+    
+    main {
+        height: 10476px;
+    }
+    /* Watch-your-favorite-animal-online */
+    
+    .watch-your-favorite-animal-online {
+        display: flex;
+        flex-direction: column;
+        height: 644px;
+        background-image: url(../../../online-zoo/assets/images/adaptive/640/Background.png);
+        background-position-y: 257px;
+        background-repeat: no-repeat;
+        margin-top: 110px;
+    }
+    
+    .animal-online__content__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 88px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #00a092;
+        width: 600px;
+        height: 334px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    
+    .animal-online__content__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000;
+        width: 339px;
+        height: 76px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    .animal-online__content__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: #f58021;
+        border-radius: 5px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #ffffff;
+        border: none;
+        margin-left: 20px;
+        margin-top: 30px;
+        width: 285px;
+    height: 74px;
+    }
+    
+    .animal-online__content__button > a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .button-arrow {
+        margin-left: 8px;
+    }
+    
+    .animal-online__content__button:hover {
+        cursor: pointer;
+        background: orange;
+    }
+    /* /Watch-your-favorite-animal-online */
+    
+    /* Welcome-to-the-zoo */
+    
+    .welcome-to-the-zoo__content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .welcome-to-the-zoo__content__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 66px;
+        text-transform: uppercase;
+        color: #00a092;
+        width: 523px;
+        height: 132px;
+        margin-top: 30px;
+        margin-left: 21px;
+    }
+    
+    .welcome-to-the-zoo__content__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000;
+        width: 599px;
+        height: 186px;
+        margin-top: 30px;
+        margin-left: 21px;
+    }
+    
+    .welcome-to-the-zoo__image {
+        margin-top: 100px;
+        margin-left: 0px;
+        width: 660px;
+        height: 438px;
+        background: url(../../../online-zoo/assets/images/adaptive/640/Pic.png);
+        background-repeat: no-repeat;
+    }
+    /* /Welcome-to-the-zoo */
+    
+    /* How-it-works */
+    
+    .how-it-works__content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .how-it-works__image {
+        margin-top: 50px;
+        margin-left: 0px;
+        width: 660px;
+        height: 438px;
+        background: url(../../../online-zoo/assets/images/adaptive/640/Group\ 12.png);
+        background-repeat: no-repeat;
+    }
+    
+    .how-it-works__content__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 66px;
+        text-transform: uppercase;
+        color: #00a092;
+        width: 462px;
+        height: 66px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .how-it-works__content__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000;
+        width: 600px;
+        height: 162px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    /* /How-it-works */
+    
+    /* donate */
+    
+    .donate {
+        display: flex;
+        flex-direction: column;
+        margin-top: 97px;
+        height: 459px;
+        background-color: #20113D;
+    }
+
+    .donate__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .donate__content__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 51px;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 565px;
+        height: 102px;
+        margin-top: 50px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .donate__content__text {
+        width: 600px;
+        height: 79px;
+        margin-top: 30px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .quick__donate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quick__donate__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    
+    .donation__amount {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-top: 10px;
+        margin-left: 0px;
+        background: #20113D;
+        padding: 26px 79px 24px 41px;
+        border-radius: 0 5px 5px 0;
+        border: 1px solid #ffffff;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        position: relative;
+        right: 22px;
+        margin: 0;
+    }
+    
+    input::-webkit-input-placeholder {
+        position: relative;
+        right: 9px;
+        color: #ffffff;
+    }
+    
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+    
+    form {
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    .quick__donate__btn {
+        position: absolute; 
+        top: 11px;
+        right: 1px;
+        padding: 25px 21px 22px 26px;
+        border: none;
+        background: #F58021;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    
+    .quick__donate__btn:hover {
+        background: orange;
+    }
+    /* /donate */
+    
+    /* our-pets */
+    
+    .our-pets {
+        display: flex;
+        flex-direction: column;
+        height: 1307px;
+    }
+    
+    .our-pets__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 66px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #00A092;
+        width: 394px;
+        height: 132px;
+        margin-top: 100px;
+        margin-left: 123px;
+    }
+    
+    .our-pets__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 134%;
+        text-align: center;
+        color: #000000;
+        width: 600px;
+        height: 170px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    .left-arrow {
+        padding: 16px;
+        margin-top: 100px;
+        margin-left: 513px;
+        border-radius: 5px;
+        border: 1px solid #20113D;
+        box-sizing: border-box;
+        display: none;
+    }
+    
+    .right-arrow {
+        padding: 16px;
+        margin-left: 50px;
+        border-radius: 5px;
+        border: 1px solid #20113D;
+        box-sizing: border-box;
+        display: none;
+    }
+    
+    .right-arrow:hover,
+    .left-arrow:hover {
+        cursor: pointer;
+        background: rgb(223, 219, 219);
+    }
+
+    .our-pets__choise_animal {
+        display: flex;
+    }
+
+    .our-pets__animal_list_line_one > li > div,
+    .our-pets__animal_list_line_two > li > div {
+        width: 290px;
+        height: 600px;
+        background-color: #20113D;
+    }
+
+    .our-pets__animal_list_line_one {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .panda_item {
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
+    .panda_item,
+    .lemour_item,
+    .gorilla_item,
+    .eagles_item {
+        display: none;
+        text-decoration: none;
+    }
+
+    
+
+    .card-image__panda {
+        width: 290px;
+        height: 333px;
+        background: url(../../../online-zoo/assets/images/adaptive/1200/Rectangle\ 39.png);
+        background-repeat: no-repeat;
+    }
+
+    .card__panda_page {
+        text-decoration: none;
+    }
+
+    .card-image__lemur {
+        width: 290px;
+        height: 333px;
+        background: url(../../../online-zoo/assets/images/adaptive/1200/image\ 118.png);
+        background-repeat: no-repeat;
+    }
+
+    .card-image__gorilla {
+        width: 290px;
+        height: 333px;
+        background: url(../../../online-zoo/assets/images/Rectangle\ 1.png);
+        background-repeat: no-repeat;
+    }
+
+    .card-image__eagles {
+        width: 290px;
+        height: 333px;
+        background: url(../../../online-zoo/assets/images/adaptive/1200/image\ 117.png);
+        background-repeat: no-repeat;
+    }
+
+    .card-image__koala {
+        width: 290px;
+        height: 333px;
+        background: url(../../../online-zoo/assets/images/adaptive/640/image\ 122.png);
+        background-repeat: no-repeat;
+    }
+
+    .card-image__lion {
+        width: 290px;
+        height: 333px;
+        background: url(../../../online-zoo/assets/images/adaptive/640/image\ 121.png);
+        background-repeat: no-repeat;
+    }
+
+    .item__title {
+        background: #20113D;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        text-align: center;
+        color: #ffffff;
+        text-decoration: none;
+        position: relative;
+        bottom: 55.5%;
+        border-radius: 5px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.01em;
+    }
+
+    .liz__text {
+        width: 241px;
+        height: 103px;
+    }
+
+    .shake__text {
+        height: 103px;
+    }
+
+    .lucas {
+        width: 134.29px;
+        height: 60.78px;
+    }
+
+    .andy {
+        width: 118px;
+        height: 60px;
+    }
+
+    .glen {
+        width: 107px;
+        height: 60px;
+    }
+
+    .sam {
+        width: 206px;
+        height: 61px;
+    }
+
+    .liz {
+        width: 90px;
+        height: 60px;
+    }
+
+    .shake {
+        width: 132px;
+        height: 60px;
+    }
+
+    .item__text__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+        position: relative;
+        bottom: 45px;
+        letter-spacing: 0.01em;
+    }
+
+    .item__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #FFFFFF;
+        position: relative;
+        display: flex;
+        letter-spacing: 0.001em;
+        bottom: 17px;
+        margin-left: 23px;
+        
+    }
+
+    .lemour_item,
+    .gorilla_item {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .our-pets__animal_list_line_two {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .eagles_item {
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .koala_item,
+    .lion_item {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .our-pets__animal_list_line_one > li > div > a  {
+        margin-top: 23px;
+        letter-spacing: 0.09em;
+    }
+
+    .our-pets__animal_list_line_one > li:nth-child(2) > div > a  {
+        margin-top: 50px;
+        letter-spacing: 0.09em;
+    }
+
+    .our-pets__animal_list_line_two > li > div > a  {
+        margin-top: -65px;
+        letter-spacing: 0.08em;
+        margin-left: 93px;
+        white-space: nowrap;
+    }
+
+    .our-pets__animal_list_line_one > li > div:hover,
+    .our-pets__animal_list_line_two > li > div:hover {
+        cursor: pointer;
+        background: #7c5bbe;
+        transform: scale(1.05);
+        transition: all 1s 0.1s;
+    }
+
+    .choose-favorite_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 345px;
+        height: 74px;
+        border: 1px solid #20113D;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #20113D;
+        margin-top: 50px;
+        margin-left: 148px;
+        
+    }
+
+    .choose-favorite_btn:hover {
+        cursor: pointer;
+        background: rgb(223, 219, 219);
+    }
+
+    .choose-map {
+        text-decoration: none;
+        color: #20113D;
+    }
+
+    .choose-btn {
+        margin-left: 10px;
+    }
+    /* /our-pets */
+    
+    /* pay-and-feed */
+    
+    .pay-and-feed {
+        display: flex;
+        flex-direction: column;
+        height: 3172px;
+        background: #20113D;
+    }
+    
+    .pay-and-feed__title{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 66px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 421px;
+        height: 66px;
+        margin-top: 80px;
+        margin-left: 100px;
+    }
+    
+    h4 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    
+    hr {
+        position: relative;
+        left: 55px;
+        bottom: 19px;
+        width: 563px;
+        border: 1px solid #FFFFFF;
+    }
+    
+    .donation-impact {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .donation-impact__picture {
+        width: 640px;
+        height: 417px;
+        margin-top: 48px;
+        margin-left: 0px;
+    }
+    
+    .donation-impact__content_icon {
+        margin-top: 50px;
+        margin-left: 265px;
+    }
+    
+    .donation-impact__content_title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        color: #FFFFFF;
+        width: 381px;
+        height: 34px;
+        margin-top: 24px;
+        margin-left: 130px;
+        white-space: nowrap;   
+    }
+    
+    .donation-impact__content_text {
+        text-align: center;
+        width: 600px;
+        height: 213px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    h4:nth-child(5) {
+        margin-top: 50px;
+    }
+
+    .make-a-donation {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .make-a-donation__picture {
+        width: 640px;
+        height: 417px;
+        margin-top: 48px;
+        margin-left: 0px;
+    }
+    
+    .make-a-donation__content_icon {
+        margin-top: 50px;
+        margin-left: 270px;
+    }
+    
+    .make-a-donation__content_title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        color: #FFFFFF;
+        height: 34px;
+        margin-top: 23px;
+        margin-left: 210px;   
+    }
+    
+    .make-a-donation__content_text {
+        text-align: center;
+        width: 599px;
+        height: 136px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    h4:nth-child(8) {
+        margin-top: 50px;
+    }
+    
+    .favorites-pets {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .favorites-pets__picture {
+        width: 640px;
+        height: 417px;
+        margin-top: 48px;
+        margin-left: 0px;
+    }
+    
+    .favorites-pets__content_icon {
+        margin-top: 48px;
+        margin-left: 280px;
+    }
+    
+    .favorites-pets__content_title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        text-align: center;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        color: #FFFFFF;
+        width: 599px;
+        height: 69px;
+        margin-top: 25px;
+        margin-left: 22px;
+        text-align: center;
+    }
+    
+    .favorites-pets__content_text {
+        text-align: center;
+        width: 599px;
+        height: 113px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    .donate-now_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #F58021;
+        border-radius: 5px;
+        width: 290px;
+        height: 74px;
+        border: none;
+        margin-top: 50px;
+        margin-left: 175px;
+    }
+    
+    .donate-now_arrow {
+        margin-left: 10px;
+    }
+    
+    .donate-now_btn:hover {
+        cursor: pointer;
+        background: orange;
+    }
+    
+    /* /pay-and-feed */
+    
+    /* users-think */
+    
+    .users-think {
+        display: flex;
+        flex-direction: column;
+        height: 1670px;
+        background: #20113D;
+        background-image: url(../../../online-zoo/assets/images/adaptive/640/image\ 97.png);
+        background-repeat: no-repeat;
+        background-position-y: 670px;
+    }
+    
+    .users-think__content__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 66px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 440px;
+        height: 120px;
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    
+    .users-think__content__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        color: #FFFFFF;
+        width: 577px;
+        height: 143px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    .cards-slider {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .cards-slider__line_one,
+    .cards-slider__line_two {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+
+    .cards-slider__item {
+        width: 523px;
+        height: 371px;
+        background: #ffffff;
+    }
+
+    .card-slider__image {
+        width: 92px;
+        height: 96px;
+        background-image: url(../../../online-zoo/assets/icons/“.svg);
+        background-repeat: no-repeat;
+        margin-top: 45px;
+        margin-left: 35px;
+    }
+
+    .card-slider__title {
+        width: 219px;
+        height: 68px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        color: #000000;
+        margin-left: 184px;
+        position: relative;
+        bottom: 90px;
+    }
+
+    .card-slider__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000;
+        margin-top: 0px;
+        margin-left: 50px;
+        position: relative;
+        bottom: 60px;
+        width: 463px;
+        height: 108px;
+        letter-spacing: 0.000111em;
+    }
+
+    .card-slider__signature {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-top: -20px;
+        margin-left: 175px;
+    }
+
+    .amsterdam__text {
+        height: 162px;
+    }
+
+    .signature__amster {
+        margin-top: 15px;
+    }
+
+    .new-jersey {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .toronto {
+        margin-top: 50px;
+        margin-left: 20px;
+        
+    }
+
+    .london {
+        margin-top: 30px;
+        margin-left: 141px;
+    }
+
+    .amsterdam {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .cards-slider__btn {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-top: 100px;
+        overflow: hidden;
+    }
+
+    .cards-slider__left_arrow {
+        width: 60px;
+        height: 60px;
+        background: rgba(0, 120, 201, 0.01);
+        margin-left: 0px;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        margin-top: 0px;
+    }
+
+    .cards-slider__right_arrow {
+        width: 60px;
+        height: 60px;
+        background: rgba(0, 120, 201, 0.01);
+        margin-left: 55px;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        margin-right: 41px;
+    }
+
+    .cards-slider__left_arrow:hover,
+    .cards-slider__right_arrow:hover {
+        cursor: pointer;
+        background: grey;
+    }
+
+    .leave-feedback__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 368px;
+        height: 74px;
+        background: rgba(0, 120, 201, 0.01);
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-top: 472px;
+        margin-left: -2497px;
+    }
+
+    .leave-feedback__arrow {
+        margin-left: 10px;
+    }
+
+    .leave-feedback__btn:hover {
+        cursor: pointer;
+        background: gray;
+    }
+    /* /users-think */
+    
+    /* animals-love */
+    
+    .animals-love {
+        display: flex;
+        flex-direction: column;
+        height: 1435px;
+        background: #ffffff;
+        position: relative;
+        bottom: 0;
+    }
+    
+    .animals-love__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 80px;
+        margin-left: 0px;
+    }
+    
+    .animals-love__content__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 66px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #00A092;
+        width: 655px;
+        height: 132px;
+    }
+    
+    .animals-love__content__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        text-align: center;
+        color: #20113D;
+        width: 600px;
+        height: 65px;
+        margin-top: 30px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .animals-love__item {
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+        height: 297px;
+        background: #20113D;
+        border-radius: 5px;
+    }
+
+    #feed_panda {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .panda {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .lemur {
+        position: relative;
+        bottom: 680px;
+        right: 145px;
+        display: none;
+    }
+
+    .eagles {
+        height: 639px;
+        position: relative;
+        right: 600px;
+        bottom: 20px;
+        margin-left: 0px;
+        display: none;
+    }
+
+    .tiger {
+        height: 639px;
+        position: relative;
+        right: 125px;
+        bottom: 20px;
+        display: none;
+    }
+
+    .animals-love__item:hover,
+    .animals-love__item:hover {
+        cursor: pointer;
+        background: #7c5bbe;
+        transform: scale(1.05);
+        transition: all 1s 0.1s;
+    }
+
+    .animals-love__str_one {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .animals_koala {
+        width: 930px;
+        height: 470px;
+        background: url(../../../online-zoo/assets/images/adaptive/1200/koala.png);
+        margin-left: 135px;
+        display: none;
+    }
+
+    .card-image__feed {
+        width: 455px;
+        height: 373px;
+    }
+
+    .panda__feed {
+        background: url(../../../online-zoo/assets/images/adaptive/640/image\ 14.png);
+        background-repeat: no-repeat;
+    }
+
+    .tiger__feed {
+        background: url(../../../online-zoo/assets/images/adaptive/1200/image\ 156.png);
+    }
+
+    .lemur__feed {
+        background: url(../../../online-zoo/assets/images/adaptive/1200/image\ 155.png);
+    }
+
+    .eagles__feed {
+        background: url(../../../online-zoo/assets/images/adaptive/1200/image\ 1.png);
+    }
+
+    .text__feed {
+        width: 260px;
+        height: 103px;
+        margin-left: 0;
+        margin-top: 0;
+        position: relative;
+        bottom: 304px;
+        left: 319px;
+    }
+
+    .feed {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #f58021;
+        margin-top: 0px;
+        position: relative;
+        top: 77px;
+        right: 47px;
+    }
+
+    .feed__tiger_btn {
+        margin-top: 63px;
+    }
+
+    .orange-arrow {
+        margin-left: 10px;
+    }
+
+    .animals-love__str_two {
+        display: flex;
+        align-content: flex-start;
+        margin-left: 260px;
+        margin-top: 38px;
+    }
+
+    .animals-love > .choose-favorite_btn {
+        margin-top: 75px;
+    }
+
+    .touch-animal {
+        width: 641px;
+        height: 379px;
+        margin-left: 0px;
+        margin-top: 95px;
+        background-image: url(../../../online-zoo/assets/images/adaptive/640/Touch\ the\ animal2\ 1.png);
+    }
+    
+    /* /animals-love */
+    
+    /* footer */
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 545px;
+        background: #20113D;
+        position: relative;
+        bottom: 10px;
+    }
+    
+    .footer__line_one {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer__line_one {
+        margin-top: 20px;
+        margin-left: 77px;
+    }
+    
+    .footer__line_one > .logo {
+        white-space: nowrap;
+    }
+
+    .footer__logo_yem {
+        margin-left: 81px;
+    }
+    
+    .footer__logo_rs {
+        margin-left: 74px;
+    }
+    
+    .nav-footer__menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    
+    .nav-footer__menu > li:nth-child(1) {
+        margin-left: 20px;
+    }
+    
+    .nav-footer__menu > li {
+        white-space: nowrap;
+        margin-left: 54px;
+    }
+
+    .nav-footer__menu > li > a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .nav-footer__menu > li > a:hover {
+        color: gray;
+    }
+    
+    .footer__donate_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: 359px;
+        height: 74px;
+        background: #20113D;
+        margin-left: 60px;
+        margin-top: 45px;
+    }
+    
+    .footer__btn_arrow {
+        margin-left: 10px;
+    }
+    
+    .footer__donate_btn:hover {
+        cursor: pointer;
+        background: gray;
+    }
+    
+    hr:nth-child(2) {
+        margin-left: 0px;
+        width: 640px;
+        border: 1px solid #FFFFFF;
+        position: relative;
+        bottom: 0px;
+        left: 0;
+        top: 48px;
+    }
+    
+    .footer__line_two {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .logo__name {
+        display: flex;
+        margin-top: 25px;
+        margin-left: 49px;
+    }
+    
+    .logo__name > p {
+        white-space: nowrap;
+        margin-left: 50px;
+    }
+    
+    .footer-socials {
+        display: flex;
+        margin-left: 160px;
+        margin-top: 100px;
+    }
+    
+    .footer-socials > a {
+        margin-left: 50px;
+    }
+    
+    .footer-socials > a:hover {
+        cursor: pointer;
+    }
+    /* /footer */
+    
+    
+}

@@ -1,0 +1,435 @@
+@media (min-width: 1200px) and (max-width: 1600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        width: 1200px;
+        height: 1494px;
+        margin: 0 auto;
+        background: #ffffff;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #ffffff;
+    }
+    
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: row;
+        height: 110px;
+        background-color: #f58021;
+    }
+    
+    aside {
+        display: none;
+    }
+    
+    header > h1 {
+        color: #f58021;
+        font-size: 0;
+    }
+    
+    .logo {
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+    
+    .nav-header__menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin-top: 43px;
+    }
+    
+    .nav-header__item__about {
+        margin-left: 163px;
+        text-decoration: none;
+    }
+    
+    .nav-header__item__map,
+    .nav-header__item__zoos,
+    .nav-header__item__contact-us,
+    .nav-header__item__design {
+        margin-left: 31px;
+    }
+    
+    .item__zoos,
+    .item__contact-us,
+    .item__design {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .item__about:hover,
+    .item__zoos:hover,
+    .item__contact-us:hover,
+    .item__design:hover {
+        color: #ffffff;
+    }
+    
+    .item__map {
+        color: #00a092;
+        text-decoration: none;
+    }
+    
+    .item__map:hover {
+        cursor: default;
+    }
+    
+    .socials {
+        margin-top: 37px;
+        margin-left: 80px;
+        letter-spacing: 27px;
+    }
+    
+    .header-youtube:hover,
+    .header-instagram:hover,
+    .header-facebook:hover {
+        border-bottom: 1px solid white;
+    }
+    
+    /* /header */
+    
+    /* main */
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 1055px;
+    }
+    
+    .map__title {
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 66px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #20113D;
+        width: 601px;
+        height: 131px;
+        margin-top: 30px;
+        margin-left: 302px;
+    }
+    
+    .map {
+        display: flex;
+        position: relative;
+        background-image: url(../../../online-zoo/assets/images/adaptive/1200/Map.png);
+        width: 1198px;
+        height: 777px;
+        margin-top: 20px;
+        margin-left: 0px;
+        background-repeat: no-repeat;
+    }
+    
+    .map > a > img {
+        position: absolute;
+    }
+    
+    .map > a > img:hover {
+        color: #ffffff;
+        transform: scale(1.1);
+        transition: all 1s 0.1s;
+    }
+    
+    
+    
+    .tooltip__eagle::after {
+        content: "Watch The Bald Eagles Nest from West End cam";
+        position: absolute;
+        left: 0;
+        top: 25%;
+        background: #f58021;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        width: 150px;
+        transform: scale(1.1);
+        transition: all 1s 0.1s;
+    }
+    
+    .tooltip__gorilla::after {
+        content: "Livestream from Gorilla Forest Corridor habitat cam";
+        position: absolute;
+        left: 56.5%;
+        top: 40%;
+        background: #f58021;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        width: 150px;
+        transform: scale(1.1);
+        transition: all 1s 0.1s;
+    }
+    
+    .tooltip__lemur::after {
+        content: "The ring-tailed lemurs play in Madagascar, Lemuria Land";
+        position: absolute;
+        left: 62%;
+        top: 74%;
+        background: #f58021;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        width: 150px;
+        transform: scale(1.1);
+        transition: all 1s 0.1s;
+    }
+    
+    .tooltip__panda::after {
+        content: "Watch live from China's  Panda Center ";
+        position: absolute;
+        left: 79%;
+        top: 40%;
+        background: #f58021;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        width: 150px;
+        transform: scale(1.1);
+        transition: all 1s 0.1s;
+    }
+    
+    .tooltip__eagle:hover::after,
+    .tooltip__gorilla:hover::after,
+    .tooltip__lemur:hover::after,
+    .tooltip__panda:hover::after {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+     .eagles {
+        left: 11.31%;
+        top: 40.85%;
+    
+    }
+    
+    .eagles-pic {
+        left: 12.6%;
+        top: 42.89%;
+    }
+    
+    .crocodile {
+        left: 21.2%;
+        top: 44.58%;
+    }
+    
+    .crocodile-pic {
+        left: 22%;
+        top: 45.28%;
+    }
+    
+    .lion {     
+        left: 40.97%;
+        top: 47.08%;
+    }
+    
+    .lion-pic {
+        left: 42.1%;
+        top: 49.28%;
+    }
+    
+    .gorilla {
+        left: 49.47%;
+        top: 50.28%;
+    }
+    
+    .gorilla-pic {
+        left: 50.57%;
+        top: 52.38%;
+    }
+    
+    .lemur {
+        left: 56.97%;
+        top: 63.68%
+    }
+    
+    .lemur-pic {
+        left: 59.17%;
+        top: 65.48%;
+    }
+    
+    .panda {
+        left: 72.2%;
+        top: 33.58%;
+    }
+    
+    .panda-pic {
+        left: 73.2%;
+        top: 35.48%;
+    }
+    
+    .tiger {
+        left: 72.29%;
+        top: 55.43%;
+    }
+    
+    .tiger-pic {
+        left: 72.89%;
+        top: 57.13%;    
+    }
+    
+    .koala {
+        left: 81.7%;
+        top: 66.28%;
+    }
+    
+    .koala-pic {
+        left: 83.27%;
+        top: 68.18%;
+    }
+    
+    main > a > img:hover {
+        fill: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(255, 255, 255, 0.5);
+    }
+    
+    /* /main */
+    
+    /* footer */
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 329px;
+        background: #20113D;
+    }
+    
+    .footer__line_one {
+        display: flex;
+    }
+    
+    .footer__line_one {
+        margin-top: 50px;
+        margin-left: -60px;
+    }
+    
+    .footer__line_one > .logo {
+        white-space: nowrap;
+    }
+
+    .footer__logo_yem {
+        margin-left: 25px;
+    }
+    
+    .footer__logo_rs {
+        margin-left: 25px;
+    }
+    
+    .nav-footer__menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin-top: 44px;
+        margin-left: 0px;
+    }
+    
+    .nav-footer__menu > li:nth-child(1) {
+        margin-left: 36px;
+    }
+    
+    .nav-footer__menu > li {
+        white-space: nowrap;
+        margin-left: 20px;
+    }
+
+    .nav-footer__menu > li > a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .nav-footer__menu > li > a:hover {
+        color: gray;
+    }
+    
+    .footer__donate_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: 359px;
+        height: 74px;
+        background: #20113D;
+        margin-left: 37px;
+        margin-top: 20px;
+    }
+    
+    .footer__btn_arrow {
+        margin-left: 10px;
+    }
+    
+    .footer__donate_btn:hover {
+        cursor: pointer;
+        background: gray;
+    }
+    
+    hr {
+        margin-left: 0px;
+        width: 1200px;
+        border: 1px solid #FFFFFF;
+    }
+    
+    .footer__line_two {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .logo__name {
+        display: flex;
+        margin-top: 45px;
+        margin-left: -10px;
+    }
+    
+    .logo__name > p {
+        white-space: nowrap;
+        margin-left: 50px;
+    }
+    
+    .footer-socials {
+        display: flex;
+        margin-left: 435px;
+        margin-top: 40px;
+    }
+    
+    .footer-socials > a {
+        margin-left: 40px;
+    }
+    
+    .footer-socials > a:hover {
+        cursor: pointer;
+    }
+    /* /footer */
+}
